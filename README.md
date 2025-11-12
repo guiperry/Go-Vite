@@ -94,7 +94,7 @@ go install github.com/yourusername/go-vite@latest
 ### Build from Source
 
 ```bash
-git clone https://github.com/yourusername/go-vite.git
+git clone https://github.com/guiperry/go-vite.git
 cd go-vite
 go build -o go-vite .
 sudo mv go-vite /usr/local/bin/
@@ -990,7 +990,7 @@ We welcome contributions! Here's how to get started:
 
 ```bash
 # Fork and clone
-git clone https://github.com/yourusername/go-vite.git
+git clone https://github.com/guiperry/go-vite.git
 cd go-vite
 
 # Create branch
@@ -1028,9 +1028,9 @@ When reporting issues, include:
 
 Check out example projects:
 
-- **[Todo App](https://github.com/yourusername/go-vite-todo)** - Simple task manager
-- **[Dashboard](https://github.com/yourusername/go-vite-dashboard)** - Analytics dashboard
-- **[Chat App](https://github.com/yourusername/go-vite-chat)** - Real-time messaging
+- **[Todo App](https://github.com/guiperry/go-vite-todo)** - Simple task manager
+- **[Dashboard](https://github.com/guiperry/go-vite-dashboard)** - Analytics dashboard
+- **[Chat App](https://github.com/guiperry/go-vite-chat)** - Real-time messaging
 
 ---
 
@@ -1076,8 +1076,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 💬 Community & Support
 
-- **GitHub Issues:** [Report bugs or request features](https://github.com/yourusername/go-vite/issues)
-- **Discussions:** [Community forum](https://github.com/yourusername/go-vite/discussions)
+- **GitHub Issues:** [Report bugs or request features](https://github.com/guiperry/go-vite/issues)
+- **Discussions:** [Community forum](https://github.com/guiperry/go-vite/discussions)
 - **Twitter:** [@govitecli](https://twitter.com/govitecli)
 - **Discord:** [Join our server](https://discord.gg/govite)
 

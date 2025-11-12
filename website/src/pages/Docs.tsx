@@ -196,7 +196,7 @@ xcode-select --install`}</code>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Build from Source</h3>
               <Card className="p-4 bg-card/50 border-border/50 mb-6">
                 <pre className="text-sm overflow-x-auto">
-                  <code className="text-primary">{`git clone https://github.com/yourusername/go-vite.git
+                  <code className="text-primary">{`git clone https://github.com/guiperry/go-vite.git
 cd go-vite
 go build -o go-vite .
 sudo mv go-vite /usr/local/bin/`}</code>
