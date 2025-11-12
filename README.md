@@ -1085,7 +1085,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/go-vite&type=Date)](https://star-history.com/#yourusername/go-vite&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=guiperry/go-vite&type=Date)](https://star-history.com/#guiperry/go-vite&Date)
 
 ---
 
