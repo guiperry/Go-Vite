@@ -16,7 +16,7 @@ import {
   Terminal,
   Rocket,
 } from "lucide-react";
-import logo from "@/assets/go-vite-logo-new.png";
+import logo from "@/assets/logo.png";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
@@ -90,7 +90,7 @@ const Index = () => {
                 <Button variant="ghost">Documentation</Button>
               </Link>
               <Button variant="outline" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/guiperry/go-vite" target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4 mr-2" />
                   GitHub
                 </a>
@@ -132,7 +132,7 @@ const Index = () => {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/guiperry/go-vite" target="_blank" rel="noopener noreferrer">
                   <Github className="w-5 h-5 mr-2" />
                   View on GitHub
                 </a>
@@ -270,7 +270,7 @@ const Index = () => {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/guiperry/go-vite" target="_blank" rel="noopener noreferrer">
                   Star on GitHub
                 </a>
               </Button>
@@ -294,7 +294,7 @@ const Index = () => {
                 Documentation
               </Link>
               <a
-                href="https://github.com"
+                href="https://github.com/guiperry/go-vite"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-muted-foreground hover:text-primary transition-colors"

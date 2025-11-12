@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Home, Github, Menu } from "lucide-react";
-import logo from "@/assets/go-vite-logo-new.png";
+import logo from "@/assets/logo.png";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
