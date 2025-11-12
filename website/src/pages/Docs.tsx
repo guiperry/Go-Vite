@@ -53,7 +53,7 @@ const Docs = () => {
                 </Button>
               </Link>
               <Button variant="outline" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/guiperry/go-vite" target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4 mr-2" />
                   GitHub
                 </a>
@@ -189,7 +189,7 @@ xcode-select --install`}</code>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Install via Go</h3>
               <Card className="p-4 bg-card/50 border-border/50 mb-6">
                 <pre className="text-sm overflow-x-auto">
-                  <code className="text-primary">go install github.com/yourusername/go-vite@latest</code>
+                  <code className="text-primary">go install github.com/guiperry/go-vite@latest</code>
                 </pre>
               </Card>
 

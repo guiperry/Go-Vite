@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: './', // Use relative paths for assets to allow opening index.html directly
   server: {
     host: "::",
     port: 8080,

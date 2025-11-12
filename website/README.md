@@ -38,17 +38,48 @@ npm install
 npm run dev
 ```
 
-The website will be available at `http://localhost:5173` with hot reload enabled.
+The website will be available at `http://localhost:8080` with hot reload enabled.
 
 ### Build for Production
 
 ```bash
-# Build the website
+# Navigate to the website directory first
+cd website
+
+# Build the website (outputs to dist/ directory)
 npm run build
 
-# Preview the production build
+# Preview the production build locally
 npm run preview
 ```
+
+**Note:** The build process outputs the static site to the `dist/` directory, ready for deployment to any static hosting service. Make sure you're in the `website` directory when running the build command.
+
+**Expected output files:**
+- `dist/index.html` - Main HTML file
+- `dist/assets/` - Compiled CSS, JavaScript, and static assets
+- `dist/_redirects` - SPA routing rules for Netlify
+- `dist/favicon.ico`, `dist/robots.txt` - Static assets
+
+### Testing the Built Site
+
+**For local testing:**
+- Use `npm run preview` to test with a local server
+- Or open `dist/index.html` directly in your browser (assets use relative paths)
+
+**Note:** The build is configured with `base: './'` so you can open `dist/index.html` directly in a browser without CORS issues.
+
+### Available Scripts
+
+This project uses Vite and has the following npm scripts:
+
+- **`npm run dev`** - Start the development server (not `npm start`)
+- **`npm run build`** - Build the project for production
+- **`npm run build:dev`** - Build in development mode
+- **`npm run preview`** - Preview the production build locally
+- **`npm run lint`** - Run ESLint for code quality checks
+
+**Why no `npm start`?** Unlike some frameworks (like Create React App), Vite uses `npm run dev` to start the development server. The `npm start` command is not configured in this project.
 
 ## 📁 Project Structure
 
@@ -69,11 +100,15 @@ website/
 │   ├── assets/             # Static assets (images, icons)
 │   └── App.tsx             # Main app component
 ├── public/                 # Public static files
+│   ├── favicon.ico         # Website favicon
+│   ├── robots.txt          # Search engine crawling rules
+│   └── _redirects          # Netlify redirect rules for SPA
 ├── index.html              # HTML template
 ├── package.json            # Dependencies and scripts
 ├── vite.config.ts          # Vite configuration
 ├── tailwind.config.ts      # Tailwind CSS configuration
-└── tsconfig.json           # TypeScript configuration
+├── tsconfig.json           # TypeScript configuration
+└── netlify.toml            # Netlify deployment configuration
 ```
 
 ## 🛠️ Technologies Used
@@ -128,11 +163,31 @@ npm run lint
 
 The website can be deployed to any static hosting service:
 
+- **Netlify** - Recommended for automatic deployments (see configuration below)
 - **Vercel** - `npm run build` outputs to `dist/`
-- **Netlify** - Automatic deployments from Git
 - **GitHub Pages** - Static hosting for the repository
 - **AWS S3 + CloudFront** - Scalable static hosting
 - **Railway** - Full-stack deployment platform
+
+### Netlify Deployment
+
+This project is pre-configured for Netlify deployment:
+
+1. **Connect your repository** to Netlify
+2. **Build settings** are automatically detected from `netlify.toml`:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Node version: 18
+3. **SPA routing** is configured to handle React Router
+4. **Security headers** and caching are optimized
+
+The `netlify.toml` file includes:
+- Build configuration
+- SPA redirect rules for client-side routing
+- Security headers (XSS protection, frame options, etc.)
+- Asset caching optimization
+
+Simply push to your main branch and Netlify will automatically deploy!
 
 ### Environment Variables
 
@@ -149,7 +204,7 @@ VITE_API_URL=https://api.govite.dev
 This website is part of the Go-Vite project. To contribute:
 
 1. **Fork** the repository
-2. **Clone** your fork: `git clone https://github.com/yourusername/go-vite.git`
+2. **Clone** your fork: `git clone https://github.com/guiperry/go-vite.git`
 3. **Navigate** to website: `cd go-vite/website`
 4. **Install** dependencies: `npm install`
 5. **Create** a feature branch: `git checkout -b feature/website-improvement`
@@ -173,7 +228,7 @@ This website is part of the Go-Vite project and is licensed under the MIT Licens
 
 - **[Go-Vite CLI](https://github.com/guiperry/go-vite)** - The main CLI tool repository
 - **[Go-Vite Documentation](https://docs.govite.dev)** - Online documentation
-- **[Go-Vite Website](https://govite.dev)** - Live website
+- **[Go-Vite Website](https://go-vite.netlify.app)** - Live website
 - **[Issues](https://github.com/guiperry/go-vite/issues)** - Report bugs or request features
 - **[Discussions](https://github.com/guiperry/go-vite/discussions)** - Community forum
 

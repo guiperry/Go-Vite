@@ -88,7 +88,7 @@ xcode-select --install
 ### Install via Go
 
 ```bash
-go install github.com/yourusername/go-vite@latest
+go install github.com/guiperry/go-vite@latest
 ```
 
 ### Build from Source
@@ -1091,7 +1091,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**[Website](https://govite.dev)** • **[Documentation](https://docs.govite.dev)** • **[Blog](https://blog.govite.dev)**
+**[Website](https://go-vite.netlify.app)** • **[Documentation](https://go-vite.netlify.app/docs)** • **[Blog](https://go-vite.netlify.app/blog)**
 
 Made with ❤️ by the Go-Vite team
 
