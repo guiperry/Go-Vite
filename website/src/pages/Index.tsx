@@ -141,7 +141,7 @@ const Index = () => {
 
             {/* Quick Install */}
             <div className="max-w-2xl mx-auto">
-              <CodeBlock code="go install github.com/yourusername/go-vite@latest" />
+              <CodeBlock code="go install github.com/guiperry/go-vite@latest" />
             </div>
           </div>
         </div>
